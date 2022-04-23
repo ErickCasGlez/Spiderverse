@@ -1,3 +1,6 @@
+//Se importa la clase que se encuentra en la carpeta app
+const Spiderman = require('./../app/spiderman')
+
 describe("Test Suite Dummy Description", () => {
     test('Case 1 Dummy', () => {
 
