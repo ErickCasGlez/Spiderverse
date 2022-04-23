@@ -1,12 +1,12 @@
 //Se importa la clase que se encuentra en la carpeta app
 const Spiderman = require('./../app/spiderman')
 
-describe("Test Suite Dummy Description", () => {
-    test('Case 1 Dummy', () => {
+describe("Unit test for spiderman class", () => {
+    test('1) Create an spiderman object', () => {
 
         //Aquí va el código que queremos ver el resultado
         //Se busca un objeto con estos datos
-        const andrewGarfield = Spiderman("Spiderman Sony", 31, "Andrew Garfield", 2, "Sony")
+        const andrewGarfield = new Spiderman("Spiderman Sony", 31, "Andrew Garfield", 2, "Sony")
 
         //Validamos que el código nos arroje el resultado esperado
         expect(andrewGarfield.name).toBe("Spiderman Sony")
